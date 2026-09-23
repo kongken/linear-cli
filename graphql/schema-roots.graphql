@@ -1,0 +1,5 @@
+# Root operation types for codegen tools (Linear's downloaded schema omits this).
+schema {
+  query: Query
+  mutation: Mutation
+}

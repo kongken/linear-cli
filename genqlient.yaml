@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Khan/genqlient/main/docs/genqlient.schema.json
+schema:
+  - graphql/schema.graphql
+  - graphql/schema-roots.graphql
+operations:
+  - internal/gql/queries/*.graphql
+generated: internal/gql/generated.go
+package: gql
+optional: pointer
+bindings:
+  DateTime:
+    type: string
+  TimelessDate:
+    type: string
+  JSONObject:
+    type: map[string]any
+  JSON:
+    type: any
+  UUID:
+    type: string

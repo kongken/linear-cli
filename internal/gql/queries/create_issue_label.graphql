@@ -1,0 +1,15 @@
+mutation CreateIssueLabel($input: IssueLabelCreateInput!) {
+  issueLabelCreate(input: $input) {
+    success
+    issueLabel {
+      id
+      name
+      color
+      description
+      team {
+        key
+        name
+      }
+    }
+  }
+}

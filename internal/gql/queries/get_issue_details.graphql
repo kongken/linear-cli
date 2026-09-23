@@ -1,0 +1,85 @@
+query GetIssueDetails($id: String!) {
+  issue(id: $id) {
+    identifier
+    title
+    description
+    url
+    branchName
+    state {
+      name
+      color
+    }
+    assignee {
+      name
+      displayName
+    }
+    priority
+    project {
+      name
+    }
+    projectMilestone {
+      name
+    }
+    cycle {
+      id
+      number
+      name
+      isActive
+      isNext
+      isPrevious
+      isFuture
+      isPast
+    }
+    team {
+      activeCycle {
+        number
+      }
+    }
+    labels(first: 50) {
+      nodes {
+        id
+        name
+        color
+      }
+    }
+    parent {
+      identifier
+      title
+      state {
+        name
+        color
+      }
+    }
+    children(first: 250) {
+      nodes {
+        identifier
+        title
+        state {
+          name
+          color
+        }
+      }
+    }
+    attachments(first: 50) {
+      nodes {
+        id
+        title
+        url
+        subtitle
+        sourceType
+        metadata
+        createdAt
+      }
+    }
+    documents(first: 50) {
+      nodes {
+        id
+        title
+        slugId
+        url
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}

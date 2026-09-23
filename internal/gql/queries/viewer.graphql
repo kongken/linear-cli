@@ -1,0 +1,14 @@
+query ViewerWhoami {
+  viewer {
+    id
+    name
+    displayName
+    email
+    admin
+    guest
+    organization {
+      name
+      urlKey
+    }
+  }
+}

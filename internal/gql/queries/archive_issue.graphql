@@ -1,0 +1,5 @@
+mutation ArchiveIssue($id: String!) {
+  issueArchive(id: $id) {
+    success
+  }
+}

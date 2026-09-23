@@ -1,0 +1,7 @@
+/linear
+*.exe
+*.test
+.idea/
+.vscode/
+.config/linear.toml
+.DS_Store

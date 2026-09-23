@@ -1,0 +1,13 @@
+query ListTeams($first: Int, $after: String) {
+  teams(first: $first, after: $after) {
+    nodes {
+      id
+      key
+      name
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

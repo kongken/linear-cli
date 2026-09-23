@@ -1,0 +1,16 @@
+query ResolveTeam($reference: String!) {
+  teams(
+    filter: {
+      or: [
+        { key: { eqIgnoreCase: $reference } }
+        { name: { eqIgnoreCase: $reference } }
+      ]
+    }
+  ) {
+    nodes {
+      id
+      key
+      name
+    }
+  }
+}
