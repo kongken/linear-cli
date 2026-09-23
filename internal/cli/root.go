@@ -27,7 +27,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// NewRoot builds the linear CLI root command (parity with src/cli.ts).
+// NewRoot builds the linear CLI root command.
 func NewRoot() *cobra.Command {
 	var workspace string
 
