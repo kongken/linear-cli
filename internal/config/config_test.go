@@ -40,3 +40,30 @@ func TestGetOptionFromLinearToml(t *testing.T) {
 		t.Fatal("expected missing key")
 	}
 }
+
+func TestGetOptionFromEnv(t *testing.T) {
+	if err := config.LoadProjectConfig(); err != nil {
+		t.Fatal(err)
+	}
+	t.Setenv("LINEAR_TEAM_ID", "OPS")
+	team, ok := config.GetOption("team_id")
+	if !ok || team != "OPS" {
+		t.Fatalf("team_id = %q ok=%v", team, ok)
+	}
+}
+
+func TestGetOptionEnvOverridesToml(t *testing.T) {
+	dir := t.TempDir()
+	path := filepath.Join(dir, ".linear.toml")
+	if err := os.WriteFile(path, []byte("team_id = \"ENG\"\n"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	if err := config.LoadProjectConfig(path); err != nil {
+		t.Fatal(err)
+	}
+	t.Setenv("LINEAR_TEAM_ID", "OPS")
+	team, ok := config.GetOption("team_id")
+	if !ok || team != "OPS" {
+		t.Fatalf("team_id = %q ok=%v", team, ok)
+	}
+}

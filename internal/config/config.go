@@ -3,6 +3,7 @@ package config
 import (
 	"os"
 	"path/filepath"
+	"strings"
 
 	"github.com/BurntSushi/toml"
 )
@@ -56,8 +57,13 @@ func LoadProjectConfigFromCwd() error {
 	)
 }
 
-// GetOption returns a string option from project config (team_id, workspace, api_key, …).
+// GetOption returns a string option (team_id, workspace, api_key, …).
+// The LINEAR_<KEY> environment variable (e.g. LINEAR_TEAM_ID) takes precedence
+// over project config.
 func GetOption(key string) (string, bool) {
+	if v := os.Getenv("LINEAR_" + strings.ToUpper(key)); v != "" {
+		return v, true
+	}
 	if projectConfig == nil {
 		return "", false
 	}
