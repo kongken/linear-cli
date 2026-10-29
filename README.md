@@ -40,6 +40,7 @@ go build -o linear ./cmd/linear
 
 GraphQL operations live in `internal/gql/queries/`; regenerate with `go generate ./internal/gql/`.
 
-## Research
+## Research and plans
 
 - [Plane API support](docs/research/plane-api.md) — API mappings, compatibility, and proposed integration scope; Plane commands are not implemented yet.
+- [Plane implementation plan](docs/plans/plane-support.md) — proposed `workctl` naming, Linear compatibility, architecture, delivery stages, and acceptance criteria; planned commands are not available yet.
