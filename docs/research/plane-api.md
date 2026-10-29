@@ -4,6 +4,8 @@
 
 本文保留最初的 API 调研及当时建议。后续完整执行方案见 [Plane 支持实施计划](../plans/plane-support.md)，其中选定 `workctl linear/plane` 双服务入口，替代本文原先的 `linear plane` 命名建议；CLI 输出与配置决策以该计划为准。
 
+现已有预览实现，实际使用见 [Plane 命令说明](../plane.md)，已实现及未验收能力见 [兼容矩阵](../compatibility.md)。下文「未实现」等描述属于原始调研记录。
+
 ## 结论与交付范围
 
 Plane 的公开 API 可以覆盖工作项、项目、状态、标签、成员、评论及周期等核心操作，适合接入 linear-cli。本次 issue 的要求是「调研」，因此交付 API 映射、代码改造建议及验证清单；**没有实现 Plane 命令，也没有声称完成真实实例联调**。

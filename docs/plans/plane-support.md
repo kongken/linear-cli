@@ -1,6 +1,6 @@
 # Plane 支持实施计划
 
-日期：2026-10-29。基于代码 `19bfbf6` 和 [Plane API 调研](../research/plane-api.md)。状态：待实施的设计与交付计划；本文中的新名称、命令、配置及接口均未实现。
+日期：2026-10-29。设计基于代码 `19bfbf6` 和 [Plane API 调研](../research/plane-api.md)。状态：实施中，已有 `workctl` 双入口及 Plane 预览代码。本文保留完整目标与交付门槛，当前实际能力、实现差异和待验收项以 [兼容矩阵](../compatibility.md) 为准；不能将下列所有目标视为均已完成。
 
 本计划将现有 Linear 专用工具扩展为同时支持 Linear 与 Plane 的工作管理 CLI。采用中性名称 **`workctl`**，按服务显式分组；保留 **`linear`** 可执行文件及现有使用方式。先交付 Cloud v2 核心闭环，再实现自建 v1，最后完成资源工作流、发布与兼容验收。不承诺把全部 Linear 特性机械复制到 Plane。
 
@@ -86,7 +86,7 @@ Plane 非交互调用缺必填项直接失败；TTY 仅在用户选择交互时�
 - 两条 Linear 入口继续读取当前目录 `linear.toml` / `.linear.toml`、`LINEAR_*` 和原 credentials/keyring。保留 `LINEAR_API_KEY` 与 `--workspace` 冲突规则；不让新 Plane profile 改变这些优先级。
 - 保留 Linear 原始 GraphQL JSON 字段/嵌套及 `nodes/pageInfo`，不经过 Plane DTO。`api` 仍接受 GraphQL；`schema` 仍输出 Linear schema。
 - 初始发布不删除 `linear`、不打印弃用警告、不移动凭据。以后若停发旧 binary，必须另立 major 迁移计划；本计划不设自动删除期限。
-- `linear plane` 只是旧调研建议，没有发布过，因此不增加兼容别名。README 当前仍显示已实现的 Linear 产品；新用法只存在于本计划，等 P5 才改安装首页。
+- `linear plane` 只是旧调研建议，没有发布过，因此不增加兼容别名。README 已加入 source build 的预览入口，保留旧 Linear 安装路径；发行版发布仍需 P5 验收。
 
 ## 4. 认证、profile 与配置
 
@@ -259,9 +259,9 @@ P4 上传流程依版本获取凭据、上传、确认；仅把存储服务需�
 
 稳定发布的退出条件：核心命令在两个已指定目标通过真实验收；P4 能力矩阵有实测或明确不支持依据；旧 Linear 脚本回归通过；双 binary/文档/安装和回退路径可用。任一核心项未满足，只能继续标预览。
 
-## 10. 本轮验证与实施前输入
+## 10. 计划制定时的验证与实施前输入
 
-本轮只制定计划，不实现命令、不迁移任何凭据、不向 Plane 写入。已重新检查现有 root/入口、config、credentials/keyring、GraphQL client、错误默认提示、issue 工作流和 CI，确保目录/接口建议能对应实际代码。当前代码尚无 `cmd/workctl`，因此不能把未来双入口/Plane 验收写成已通过。
+以下历史记录对应计划提交 `2974e61`：当时只制定计划，没有实现命令、迁移凭据或向 Plane 写入；检查了 root/入口、config、credentials/keyring、GraphQL client、错误提示、issue 工作流和 CI。当时尚无 `cmd/workctl`，因此下面的基线检查不作为新功能验收证据。后续实现状态见 [兼容矩阵](../compatibility.md) 和对应 PR 的验证记录。
 
 本轮验证记录（2026-10-29）：
 
