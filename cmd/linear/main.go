@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kongken/linear-cli/internal/cli"
+	"github.com/kongken/workctl/internal/cli"
 )
 
 func main() {

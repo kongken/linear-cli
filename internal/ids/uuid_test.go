@@ -3,7 +3,7 @@ package ids_test
 import (
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/ids"
+	"github.com/kongken/workctl/internal/ids"
 )
 
 func TestIsUUID(t *testing.T) {

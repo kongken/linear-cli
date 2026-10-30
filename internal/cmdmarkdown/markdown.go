@@ -3,7 +3,7 @@ package cmdmarkdown
 import (
 	"fmt"
 
-	"github.com/kongken/linear-cli/internal/markdownref"
+	"github.com/kongken/workctl/internal/markdownref"
 	"github.com/spf13/cobra"
 )
 

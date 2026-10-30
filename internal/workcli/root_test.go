@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/cli"
-	"github.com/kongken/linear-cli/internal/workcli"
+	"github.com/kongken/workctl/internal/cli"
+	"github.com/kongken/workctl/internal/workcli"
 )
 
 func TestLinearJSONCompatibility(t *testing.T) {

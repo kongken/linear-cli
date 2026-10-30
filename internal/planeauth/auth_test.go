@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/keyring"
-	"github.com/kongken/linear-cli/internal/planeauth"
-	"github.com/kongken/linear-cli/internal/planeconfig"
+	"github.com/kongken/workctl/internal/keyring"
+	"github.com/kongken/workctl/internal/planeauth"
+	"github.com/kongken/workctl/internal/planeconfig"
 )
 
 func TestCredentialsAreIsolatedByInstanceAndLogout(t *testing.T) {

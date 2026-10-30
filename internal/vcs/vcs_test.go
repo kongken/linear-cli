@@ -3,7 +3,7 @@ package vcs_test
 import (
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/vcs"
+	"github.com/kongken/workctl/internal/vcs"
 )
 
 func TestParseJjTrailersOutput(t *testing.T) {

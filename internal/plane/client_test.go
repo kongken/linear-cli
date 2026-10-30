@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kongken/linear-cli/internal/plane"
-	"github.com/kongken/linear-cli/internal/planeconfig"
+	"github.com/kongken/workctl/internal/plane"
+	"github.com/kongken/workctl/internal/planeconfig"
 )
 
 func TestWorkItemRoundTripUsesVersionContract(t *testing.T) {

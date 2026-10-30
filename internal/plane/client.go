@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kongken/linear-cli/internal/planeconfig"
+	"github.com/kongken/workctl/internal/planeconfig"
 )
 
 type ClientOptions struct {

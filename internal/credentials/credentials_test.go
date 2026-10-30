@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/credentials"
+	"github.com/kongken/workctl/internal/credentials"
 )
 
 func TestLoadInlineCredentials(t *testing.T) {

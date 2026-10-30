@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/teams"
+	"github.com/kongken/workctl/internal/teams"
 )
 
 func TestResolveTeam(t *testing.T) {

@@ -6,10 +6,10 @@ import (
 	"io"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/cli"
-	"github.com/kongken/linear-cli/internal/cmdplane"
-	clierrors "github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/version"
+	"github.com/kongken/workctl/internal/cli"
+	"github.com/kongken/workctl/internal/cmdplane"
+	clierrors "github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/version"
 	"github.com/spf13/cobra"
 )
 

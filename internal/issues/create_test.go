@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/graphql"
-	"github.com/kongken/linear-cli/internal/issues"
+	"github.com/kongken/workctl/internal/graphql"
+	"github.com/kongken/workctl/internal/issues"
 )
 
 func TestCreateIssueWithProjectAndLabels(t *testing.T) {

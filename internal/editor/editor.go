@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/errors"
+	"github.com/kongken/workctl/internal/errors"
 )
 
 // Get returns the preferred editor binary/command from git config or $EDITOR.

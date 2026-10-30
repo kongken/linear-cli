@@ -10,7 +10,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/issues"
+	"github.com/kongken/workctl/internal/issues"
 )
 
 func TestFetchMineIssuesPaginatesAndKeepsConnectionShape(t *testing.T) {

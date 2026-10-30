@@ -4,7 +4,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/errors"
+	"github.com/kongken/workctl/internal/errors"
 )
 
 // CurrentBranch returns the short symbolic ref for HEAD, or "" if detached.

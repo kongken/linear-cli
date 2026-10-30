@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/plane"
+	"github.com/kongken/workctl/internal/plane"
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
 )

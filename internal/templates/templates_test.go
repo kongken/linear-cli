@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/templates"
+	"github.com/kongken/workctl/internal/templates"
 )
 
 func TestResolveTemplateByName(t *testing.T) {

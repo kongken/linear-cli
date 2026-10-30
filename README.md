@@ -14,7 +14,7 @@ go build -o linear ./cmd/linear
 The existing installation path remains supported:
 
 ```bash
-go install github.com/kongken/linear-cli/cmd/linear@latest
+go install github.com/kongken/workctl/cmd/linear@latest
 ```
 
 Build the Plane preview from this checkout until a release containing `cmd/workctl` is published. See [installation](docs/installation.md).

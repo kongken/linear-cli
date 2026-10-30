@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/editor"
+	"github.com/kongken/workctl/internal/editor"
 )
 
 func TestGetEditorFromEnv(t *testing.T) {

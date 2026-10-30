@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/issues"
+	"github.com/kongken/workctl/internal/issues"
 )
 
 func TestFetchMineIssues(t *testing.T) {

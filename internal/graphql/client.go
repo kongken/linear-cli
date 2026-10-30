@@ -11,11 +11,11 @@ import (
 	"time"
 
 	gqlclient "github.com/Khan/genqlient/graphql"
-	linearconst "github.com/kongken/linear-cli/internal/const"
-	"github.com/kongken/linear-cli/internal/config"
-	"github.com/kongken/linear-cli/internal/credentials"
-	"github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/version"
+	linearconst "github.com/kongken/workctl/internal/const"
+	"github.com/kongken/workctl/internal/config"
+	"github.com/kongken/workctl/internal/credentials"
+	"github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/version"
 )
 
 func mustVersion() string {

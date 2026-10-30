@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/errors"
+	"github.com/kongken/workctl/internal/errors"
 )
 
 // Sources describes how IDs are supplied for a bulk operation.

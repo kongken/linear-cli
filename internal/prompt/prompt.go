@@ -6,7 +6,7 @@ import (
 
 	"github.com/charmbracelet/huh"
 	"github.com/mattn/go-isatty"
-	"github.com/kongken/linear-cli/internal/errors"
+	"github.com/kongken/workctl/internal/errors"
 )
 
 // IsInteractive reports whether stdin is a terminal.

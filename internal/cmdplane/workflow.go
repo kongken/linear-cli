@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/plane"
+	"github.com/kongken/workctl/internal/plane"
 	"github.com/spf13/cobra"
 	htmlparser "golang.org/x/net/html"
 )

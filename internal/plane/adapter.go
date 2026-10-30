@@ -3,7 +3,7 @@ package plane
 import (
 	"encoding/json"
 	"fmt"
-	clierrors "github.com/kongken/linear-cli/internal/errors"
+	clierrors "github.com/kongken/workctl/internal/errors"
 	"net/url"
 )
 

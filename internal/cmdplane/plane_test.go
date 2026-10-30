@@ -3,7 +3,7 @@ package cmdplane_test
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/kongken/linear-cli/internal/keyring"
+	"github.com/kongken/workctl/internal/keyring"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/cmdplane"
-	"github.com/kongken/linear-cli/internal/planeconfig"
+	"github.com/kongken/workctl/internal/cmdplane"
+	"github.com/kongken/workctl/internal/planeconfig"
 )
 
 func TestCreateConvertsMarkdownAndKeepsNativeJSON(t *testing.T) {

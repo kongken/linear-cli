@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	linearconst "github.com/kongken/linear-cli/internal/const"
+	linearconst "github.com/kongken/workctl/internal/const"
 )
 
 var mdImageRE = regexp.MustCompile(`!\[[^\]]*\]\((https?://[^)\s]+)\)`)

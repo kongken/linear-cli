@@ -8,12 +8,12 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/config"
-	"github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/gql"
-	"github.com/kongken/linear-cli/internal/graphql"
-	"github.com/kongken/linear-cli/internal/prompt"
-	"github.com/kongken/linear-cli/internal/teams"
+	"github.com/kongken/workctl/internal/config"
+	"github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/gql"
+	"github.com/kongken/workctl/internal/graphql"
+	"github.com/kongken/workctl/internal/prompt"
+	"github.com/kongken/workctl/internal/teams"
 	"github.com/spf13/cobra"
 )
 

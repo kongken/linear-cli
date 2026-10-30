@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/config"
-	"github.com/kongken/linear-cli/internal/credentials"
-	"github.com/kongken/linear-cli/internal/graphql"
+	"github.com/kongken/workctl/internal/config"
+	"github.com/kongken/workctl/internal/credentials"
+	"github.com/kongken/workctl/internal/graphql"
 )
 
 func TestResolvedAPIKeyEnvWins(t *testing.T) {
