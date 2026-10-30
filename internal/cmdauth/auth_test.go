@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/cmdauth"
-	"github.com/kongken/linear-cli/internal/credentials"
+	"github.com/kongken/workctl/internal/cmdauth"
+	"github.com/kongken/workctl/internal/credentials"
 )
 
 func TestAuthLoginAndWhoami(t *testing.T) {

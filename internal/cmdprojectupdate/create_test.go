@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/cli"
+	"github.com/kongken/workctl/internal/cli"
 )
 
 func TestProjectUpdateCreate(t *testing.T) {

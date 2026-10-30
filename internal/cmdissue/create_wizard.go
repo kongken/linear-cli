@@ -6,12 +6,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/config"
-	"github.com/kongken/linear-cli/internal/display"
-	"github.com/kongken/linear-cli/internal/editor"
-	"github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/prompt"
-	"github.com/kongken/linear-cli/internal/teams"
+	"github.com/kongken/workctl/internal/config"
+	"github.com/kongken/workctl/internal/display"
+	"github.com/kongken/workctl/internal/editor"
+	"github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/prompt"
+	"github.com/kongken/workctl/internal/teams"
 )
 
 // interactiveCreateResult holds values gathered by the create wizard.

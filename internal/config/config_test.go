@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/config"
+	"github.com/kongken/workctl/internal/config"
 )
 
 func TestCLIWorkspaceRoundTrip(t *testing.T) {

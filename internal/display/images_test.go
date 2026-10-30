@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/display"
+	"github.com/kongken/workctl/internal/display"
 )
 
 func TestExtractAndRewriteImageURLs(t *testing.T) {

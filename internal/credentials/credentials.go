@@ -9,7 +9,7 @@ import (
 	"sync"
 
 	"github.com/BurntSushi/toml"
-	"github.com/kongken/linear-cli/internal/keyring"
+	"github.com/kongken/workctl/internal/keyring"
 )
 
 // Credentials holds workspace credentials metadata.

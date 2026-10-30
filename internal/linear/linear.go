@@ -7,13 +7,13 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/kongken/linear-cli/internal/config"
-	"github.com/kongken/linear-cli/internal/display"
-	"github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/gql"
-	"github.com/kongken/linear-cli/internal/graphql"
-	"github.com/kongken/linear-cli/internal/issueid"
-	"github.com/kongken/linear-cli/internal/vcs"
+	"github.com/kongken/workctl/internal/config"
+	"github.com/kongken/workctl/internal/display"
+	"github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/gql"
+	"github.com/kongken/workctl/internal/graphql"
+	"github.com/kongken/workctl/internal/issueid"
+	"github.com/kongken/workctl/internal/vcs"
 )
 
 var integerIDRe = regexp.MustCompile(`^[1-9][0-9]*$`)

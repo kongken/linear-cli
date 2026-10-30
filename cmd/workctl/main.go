@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/kongken/linear-cli/internal/workcli"
+	"github.com/kongken/workctl/internal/workcli"
 )
 
 func main() {

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/planeconfig"
+	"github.com/kongken/workctl/internal/planeconfig"
 )
 
 func TestProfileCannotSendCredentialToOverriddenInstance(t *testing.T) {

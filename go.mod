@@ -1,4 +1,4 @@
-module github.com/kongken/linear-cli
+module github.com/kongken/workctl
 
 go 1.24.4
 

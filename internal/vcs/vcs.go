@@ -4,9 +4,9 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/config"
-	"github.com/kongken/linear-cli/internal/git"
-	"github.com/kongken/linear-cli/internal/issueid"
+	"github.com/kongken/workctl/internal/config"
+	"github.com/kongken/workctl/internal/git"
+	"github.com/kongken/workctl/internal/issueid"
 )
 
 // Type is the configured VCS backend.

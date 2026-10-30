@@ -7,11 +7,11 @@ import (
 	"regexp"
 	"strings"
 
-	linearconst "github.com/kongken/linear-cli/internal/const"
-	"github.com/kongken/linear-cli/internal/credentials"
-	"github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/gql"
-	"github.com/kongken/linear-cli/internal/graphql"
+	linearconst "github.com/kongken/workctl/internal/const"
+	"github.com/kongken/workctl/internal/credentials"
+	"github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/gql"
+	"github.com/kongken/workctl/internal/graphql"
 	"github.com/spf13/cobra"
 )
 

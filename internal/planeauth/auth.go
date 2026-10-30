@@ -12,8 +12,8 @@ import (
 	"strings"
 
 	"github.com/BurntSushi/toml"
-	"github.com/kongken/linear-cli/internal/keyring"
-	"github.com/kongken/linear-cli/internal/planeconfig"
+	"github.com/kongken/workctl/internal/keyring"
+	"github.com/kongken/workctl/internal/planeconfig"
 	gokeyring "github.com/zalando/go-keyring"
 )
 

@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/cli"
-	"github.com/kongken/linear-cli/internal/cmdissue"
+	"github.com/kongken/workctl/internal/cli"
+	"github.com/kongken/workctl/internal/cmdissue"
 )
 
 func TestIssueIDFromBranch(t *testing.T) {

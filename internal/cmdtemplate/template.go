@@ -7,9 +7,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/graphql"
-	"github.com/kongken/linear-cli/internal/teams"
+	"github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/graphql"
+	"github.com/kongken/workctl/internal/teams"
 	"github.com/spf13/cobra"
 )
 

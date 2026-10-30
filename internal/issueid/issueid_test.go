@@ -3,7 +3,7 @@ package issueid_test
 import (
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/issueid"
+	"github.com/kongken/workctl/internal/issueid"
 )
 
 func TestParseIssueIdentifier(t *testing.T) {

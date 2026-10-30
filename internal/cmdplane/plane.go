@@ -14,11 +14,11 @@ import (
 	"text/tabwriter"
 	"time"
 
-	clierrors "github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/keyring"
-	"github.com/kongken/linear-cli/internal/plane"
-	"github.com/kongken/linear-cli/internal/planeauth"
-	"github.com/kongken/linear-cli/internal/planeconfig"
+	clierrors "github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/keyring"
+	"github.com/kongken/workctl/internal/plane"
+	"github.com/kongken/workctl/internal/planeauth"
+	"github.com/kongken/workctl/internal/planeconfig"
 	"github.com/spf13/cobra"
 )
 

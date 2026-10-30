@@ -7,8 +7,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/linear"
+	"github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/linear"
 	"github.com/spf13/cobra"
 )
 

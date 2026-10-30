@@ -12,8 +12,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/plane"
-	"github.com/kongken/linear-cli/internal/planeconfig"
+	"github.com/kongken/workctl/internal/plane"
+	"github.com/kongken/workctl/internal/planeconfig"
 )
 
 func TestAttachmentUploadSeparatesAPIAndStorageCredentials(t *testing.T) {

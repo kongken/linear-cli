@@ -4,9 +4,9 @@ import (
 	"context"
 	"strings"
 
-	"github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/gql"
-	"github.com/kongken/linear-cli/internal/graphql"
+	"github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/gql"
+	"github.com/kongken/workctl/internal/graphql"
 )
 
 // Team is a resolved Linear team.

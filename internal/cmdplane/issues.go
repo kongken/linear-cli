@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/kongken/linear-cli/internal/plane"
+	"github.com/kongken/workctl/internal/plane"
 	"github.com/spf13/cobra"
 	"github.com/yuin/goldmark"
 )

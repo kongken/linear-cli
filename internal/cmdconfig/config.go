@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kongken/linear-cli/internal/config"
-	"github.com/kongken/linear-cli/internal/errors"
+	"github.com/kongken/workctl/internal/config"
+	"github.com/kongken/workctl/internal/errors"
 	"github.com/spf13/cobra"
 )
 

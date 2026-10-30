@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kongken/linear-cli/internal/ids"
-	"github.com/kongken/linear-cli/internal/editor"
-	"github.com/kongken/linear-cli/internal/errors"
-	"github.com/kongken/linear-cli/internal/graphql"
-	"github.com/kongken/linear-cli/internal/prompt"
+	"github.com/kongken/workctl/internal/ids"
+	"github.com/kongken/workctl/internal/editor"
+	"github.com/kongken/workctl/internal/errors"
+	"github.com/kongken/workctl/internal/graphql"
+	"github.com/kongken/workctl/internal/prompt"
 	"github.com/spf13/cobra"
 )
 

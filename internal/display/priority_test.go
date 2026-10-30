@@ -3,7 +3,7 @@ package display_test
 import (
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/display"
+	"github.com/kongken/workctl/internal/display"
 )
 
 func TestPriorityDisplay(t *testing.T) {

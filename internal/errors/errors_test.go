@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/errors"
+	"github.com/kongken/workctl/internal/errors"
 )
 
 func TestIsDebugMode(t *testing.T) {

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kongken/linear-cli/internal/bulk"
+	"github.com/kongken/workctl/internal/bulk"
 )
 
 func TestParseIDs(t *testing.T) {
