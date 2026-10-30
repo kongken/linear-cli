@@ -17,4 +17,24 @@ jobs:
       - name: Test
         run: go test ./...
       - name: Build
-        run: go build -o /tmp/linear ./cmd/linear
+        run: |
+          go build -o /tmp/linear ./cmd/linear
+          go build -o /tmp/workctl ./cmd/workctl
+  cross-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        goos: [linux, darwin, windows]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Build both entry points
+        env:
+          GOOS: ${{ matrix.goos }}
+          GOARCH: amd64
+          CGO_ENABLED: "0"
+        run: |
+          go build -o /tmp/linear-${{ matrix.goos }} ./cmd/linear
+          go build -o /tmp/workctl-${{ matrix.goos }} ./cmd/workctl
